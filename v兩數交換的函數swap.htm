@@ -1,0 +1,30 @@
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>兩值交換swap</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+			製作一個兩數(或字串)交換的函數swap(a,b)
+			可能資料型態如下:
+			數字
+			字串
+			布林
+		*/
+		function Swap(obja,objb){
+			var temp=obja._value;
+			obja._value=objb._value;
+			objb._value=temp;
+		}
+		var v1=new Object();
+		v1._value=prompt("請輸入第一個要交換的內容",0);
+		var v2=new Object();
+		v2._value=prompt("請輸入第二個要交換的內容",0);
+		document.write("原始資料:<br>第一個內容為:"+v1._value+"<br>第二個內容為:"+v2._value+"<hr>");
+		Swap(v1,v2);
+		document.write("交換後資料:<br>第一個內容為:"+v1._value+"<br>第二個內容為:"+v2._value)
+	</script>
+</body>
+</html>
